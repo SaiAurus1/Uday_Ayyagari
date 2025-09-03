@@ -9,16 +9,33 @@ const Home: React.FC = () => {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">
-              VISIONARY TECHNOLOGY LEADER
-            </h1>
-            <p className="hero-subtitle">
-              Transforming businesses through innovative technology solutions and strategic digital leadership
-            </p>
-            <div className="hero-buttons">
-              <Link to="/about" className="btn">Explore My Journey</Link>
-              <Link to="/portfolio" className="btn btn-secondary">View Portfolio</Link>
+            <div className="hero-text">
+              <h1 className="hero-title">
+                <span>VISIONARY</span><br />
+                <span>TECHNOLOGY</span><br />
+                <span className="highlight">LEADER</span>
+              </h1>
+              <p className="hero-subtitle">
+                Transforming businesses through innovative technology solutions and strategic digital leadership
+              </p>
+              <div className="hero-buttons">
+                <Link to="/about" className="btn btn-primary">Explore My Journey</Link>
+                <Link to="/portfolio" className="btn btn-secondary">View Portfolio</Link>
+              </div>
             </div>
+            <div className="hero-image">
+              <div className="profile-photo-container">
+                <img 
+                  src="/images/uday-ayyagari-executive.jpg" 
+                  alt="Uday Ayyagari - Technology Executive" 
+                  className="profile-photo"
+                />
+                <p className="photo-caption">Currently serving as CEO, aurus.ai</p>
+              </div>
+            </div>
+          </div>
+          <div className="scroll-indicator">
+            <div className="scroll-arrow">↓</div>
           </div>
         </div>
       </section>
